@@ -1,14 +1,18 @@
 <template>
   <div class="hello">
-    <h1>{{ obj }}</h1>
+    <Header :header-info="obj.user" />
   </div>
 </template>
 
 <script>
+import Header from './Header.vue'
+
 export default {
-  name: 'HelloWorld',
   props: {
     obj: Object
+  },
+  components: {
+    Header
   }
 }
 </script>

@@ -22,18 +22,21 @@ export default {
       .then((response) => response.json())
       .then((myJson) => {
         this.obj = myJson
+        console.log(JSON.parse(JSON.stringify(myJson)))
       })
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Poppins Medium', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  text-align: left;
+  color: #FFFFFF;
   margin-top: 60px;
 }
 </style>
