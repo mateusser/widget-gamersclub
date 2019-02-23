@@ -56,7 +56,7 @@ export default {
   border-radius: 2px 2px 0 0;
   background-color: #272940;
   display: grid;
-  grid-template-columns: 70px auto auto 60px 60px 60px 60px 83px;
+  grid-template-columns: 70px auto 515px 60px 60px 60px 60px 83px;
   grid-template-rows: 50% 50%;
   grid-template-areas: 
     "avatar name expertise medal position patent level premium"
@@ -80,6 +80,9 @@ export default {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #id {

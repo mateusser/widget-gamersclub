@@ -1,9 +1,9 @@
 <template>
   <div class="footer">
-    <div class="item" id="button">
+    <a class="item" id="button" href="#0">
       <img src="../assets/assets-front/download.png" style="justify-self: center; align-self: center;"/>
       <span style="justify-self: start; align-self: center;">Download Gamers Club Anti-Cheat</span>
-    </div>
+    </a>
     <div class="item" id="online-number"> {{ online }} </div>
     <div class="item" id="onlinewhite"> Jogadores </div>
     <div class="item" id="onlineblue"> Online </div>
@@ -55,6 +55,7 @@ export default {
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.06);
   color: #b6b8c6;
+  text-decoration: none;
   font-size: 14px;
   font-weight: 400;
   display: grid;
