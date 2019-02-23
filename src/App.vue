@@ -32,7 +32,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 #app {
-  font-family: 'Poppins Medium', sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;

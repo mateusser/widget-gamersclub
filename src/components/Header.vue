@@ -52,18 +52,16 @@ export default {
 <style scoped>
 .header {
   background-image: url('../assets/assets-front/header-background.png');
-  width: 1174px;
-  height: 93px;
   box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.3);
   border-radius: 2px 2px 0 0;
   background-color: #272940;
   display: grid;
-  grid-template-columns: 70px 1fr 2fr 60px 60px 60px 60px 83px;
+  grid-template-columns: 70px auto auto 60px 60px 60px 60px 83px;
   grid-template-rows: 50% 50%;
   grid-template-areas: 
     "avatar name expertise medal position patent level premium"
     "avatar id expertise medal position patent level premium";
-    grid-column-gap: 5px;   
+  grid-column-gap: 5px;   
 }
 
 .item {
