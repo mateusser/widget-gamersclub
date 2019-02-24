@@ -33,7 +33,7 @@ export default {
   background-color: #222538;
   display: grid;
   grid-template-columns: 310px auto 50px 75px 50px 130px;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: 
     "button gap online-number onlinewhite cheaters-number cheaterswhite"
     "button gap online-number onlineblue cheaters-number cheatersred";
@@ -60,7 +60,7 @@ export default {
   font-weight: 400;
   display: grid;
   grid-template-columns: 40px auto;
-  grid-template-rows: 100%;
+  grid-template-rows: 1fr;
 }
 
 #online-number {

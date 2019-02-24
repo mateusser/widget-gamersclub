@@ -57,7 +57,7 @@ export default {
   background-color: #272940;
   display: grid;
   grid-template-columns: 70px auto 515px 60px 60px 60px 60px 83px;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: 
     "avatar name expertise medal position patent level premium"
     "avatar id expertise medal position patent level premium";
@@ -130,7 +130,7 @@ export default {
   grid-area: premium;
   width: 83px;
   height: 93px;
-  background-image: radial-gradient(circle at center, #19f3ff 0%, #3883db 100%);
+  background-image: radial-gradient(circle at center, #19f3ff, #3883db);
 }
 
 #premium-image {
