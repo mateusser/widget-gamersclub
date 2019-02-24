@@ -6,7 +6,7 @@
     </div>
     <div class="item display" id="total">
       <div />
-      <span class="number" style="color: #2788c8; border-top: 10px;"> {{ info.matches }} </span>
+      <span class="number" style="color: #2788c8;"> {{ info.matches }} </span>
       <span class="main"> PARTIDAS </span>
     </div>
     <div class="item display" id="win">
@@ -63,12 +63,14 @@ export default {
   font-size: 17px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .number {
   font-size: 37px;
   font-weight: 400;
   line-height: 32px;
+  text-align: center;
 }
 
 .display {

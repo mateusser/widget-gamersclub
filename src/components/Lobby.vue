@@ -5,14 +5,17 @@
       <span> {{ info.title }} </span>
     </div>
     <div class="item display" id="total">
+      <div />
       <span class="number" style="color: #ddbc39;"> {{ info.matches }} </span>
       <span class="main"> PARTIDAS </span>
     </div>
     <div class="item display" id="win">
+      <div />
       <span class="number" style="color: #92aa00;"> {{ info.win }} </span>
       <span class="main"> VITÓRIAS </span>
     </div>
     <div class="item display" id="loss">
+      <div />
       <span class="number" style="color: #fc3537;"> {{ info.lose }} </span>
       <span class="main"> DERROTAS </span>
     </div>
@@ -60,12 +63,14 @@ export default {
   font-size: 17px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .number {
   font-size: 37px;
   font-weight: 400;
   line-height: 32px;
+  text-align: center;
 }
 
 .display {
@@ -73,6 +78,10 @@ export default {
   height: 103px;
   border-radius: 2px;
   background-image: linear-gradient(180deg, rgba(238, 238, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  display: grid;
+  grid-template-rows: 11px auto 50px;  
+  grid-template-columns: 1fr;  
+  grid-column-gap: 10px;
 }
 
 #title {
