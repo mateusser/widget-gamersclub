@@ -125,5 +125,8 @@ export default {
   line-height: 24px;
   text-transform: uppercase;
   text-decoration: none;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 </style>

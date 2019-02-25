@@ -20,6 +20,13 @@
       <span class="main"> DERROTAS </span>
     </div>
     <a class="item" id="button" :href="info.cta.link">
+      <div>
+        <font-awesome-icon class="icon" icon="users" />
+        <span>
+          {{ info.cta.line }}
+        </span>
+      </div>
+      <div style="width: 0; height: 22px;border: 1px solid rgba(255, 255, 255, 0.24);" />
       <span>
         {{ info.cta.title }}
       </span>
@@ -84,6 +91,10 @@ export default {
   grid-column-gap: 10px;
 }
 
+.icon {
+  font-size: 13px;
+}
+
 #title {
   grid-area: title;
   justify-self: start;
@@ -125,5 +136,9 @@ export default {
   line-height: 24px;
   text-transform: uppercase;
   text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr 1px 2fr;
+  justify-items: center;
+  align-items: center;
 }
 </style>
